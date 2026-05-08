@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Corpo */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  margin-bottom: 14px;
+  font-size: 1.4em;
+  letter-spacing: 0.01em;
+}
+
+/* Menu */
+nav {
+  border-top: 1px solid #383838;
+  padding-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.85em;
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: background 0.15s, color 0.15s;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Conteúdo */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  font-size: 1.2em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* Listas */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Código inline */
+code {
+  background-color: #e4e4e4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #c7254e;
+}
+
+/* Seções */
+section {
+  margin-bottom: 28px;
+}
+
+/* Dicas */
+#dicas {
+  background-color: #fff8e1;
+  padding: 16px 18px;
+  border-left: 4px solid #ffc107;
+  border-radius: 6px;
+}
+
+/* Box de código */
+.box {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 14px 18px;
+  border-left: 4px solid #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.box p:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.box pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #2a2a2a;
+  line-height: 1.6;
+}
