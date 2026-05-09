@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Docs Linux</title>
+</head>
+<body>
+    <header>
+        <h1>Comandos para Linux</h1>
+        <nav>
+            <a href="#q1">📘</a>
+            <a href="#q2">⌨️</a>
+            <a href="#q3">💻</a>
+            <a href="#q4">📂</a>
+            <a href="#q5">🗃️</a>
+            <a href="#q6">⚙️</a>
+            <a href="#q7">▶️</a>
+            <a href="#q8">✨</a>
+            <a href="#q9">😂</a>
+            <a href="#dicas">💡</a>
+        </nav>
+    </header>
+    <main>
+        <section id="q1">
+            <h2>O que são comandos do Linux?</h2>
+            <p>São códigos executados no terminal que permitem realizar diversas tarefas, como:</p>
+            <ul>
+                <li>Criar pastas</li>
+                <li>Executar arquivos</li>
+                <li>Instalar programas</li>
+                <li>Entre muitas outras funcionalidades</li>
+            </ul>
+        </section>
+
+        <section id="q2">
+            <h2>Atalhos do terminal</h2>
+            <ol>
+                <li><strong>Ctrl + Alt + T</strong> — Abre o terminal (em muitas distribuições)</li>
+                <li><strong>Ctrl + L</strong> — Limpa o terminal (igual ao comando <code>clear</code>)</li>
+                <li><strong>Ctrl + C</strong> — Cancela um comando em execução</li>
+                <li><strong>Ctrl + D</strong> — Fecha o terminal</li>
+                <li><strong>Ctrl + A</strong> — Vai para o início da linha</li>
+                <li><strong>Ctrl + E</strong> — Vai para o final da linha</li>
+                <li><strong>Tab</strong> — Autocompleta comandos e caminhos</li>
+                <li><strong>Seta ↑</strong> — Mostra o último comando usado</li>
+                <li><strong>Seta ↓</strong> — Navega entre comandos anteriores</li>
+                <li><strong>Ctrl + U</strong> — Apaga tudo antes do cursor</li>
+                <li><strong>Ctrl + K</strong> — Apaga tudo depois do cursor</li>
+            </ol>
+        </section>
+
+        <section id="q3">
+            <h2>Comandos básicos</h2>
+            <ol>
+                <li><strong>cd</strong> — Entra em diretórios.<br>
+                    Ex: <code>cd Documentos</code>
+                </li>
+                <li><strong>ls</strong> — Lista arquivos do diretório.</li>
+                <li><strong>pwd</strong> — Mostra o diretório atual.</li>
+                <li><strong>clear</strong> — Limpa o terminal.</li>
+                <li><strong>mkdir</strong> — Cria uma pasta.</li>
+                <li><strong>nano</strong> — Editor de texto no terminal (também cria o arquivo se não existir).</li>
+                <li><strong>touch</strong> — Cria um arquivo vazio.</li>
+            </ol>
+        </section>
+
+        <section id="q4">
+            <h2>Caminhos</h2>
+            <ul>
+                <li><code>.</code> — Diretório atual</li>
+                <li><code>..</code> — Volta um diretório</li>
+                <li><code>~</code> — Diretório home do usuário</li>
+                <li><code>/</code> — Raiz do sistema</li>
+            </ul>
+        </section>
+
+        <section id="q5">
+            <h2>Gerenciamento de arquivos</h2>
+            <ol>
+                <li><strong>mv</strong> — Move ou renomeia arquivos.<br>
+                    Ex: <code>mv arquivo.txt novo_nome.txt</code>
+                </li>
+                <li><strong>cp</strong> — Copia arquivos.<br>
+                    Ex: <code>cp arquivo.txt copia.txt</code>
+                </li>
+                <li><strong>rm</strong> — Remove arquivos.<br>
+                    Ex: <code>rm arquivo.txt</code><br>
+                    Obs: Use com cuidado, pois não vai para a lixeira.
+                </li>
+                <li><strong>rmdir</strong> — Remove diretórios vazios.<br>
+                    Ex: <code>rmdir pasta</code>
+                </li>
+                <li><strong>rm -r</strong> — Remove diretórios com arquivos dentro.<br>
+                    Ex: <code>rm -r pasta</code>
+                </li>
+                <li><strong>rename</strong> — Renomeia vários arquivos de uma vez.<br>
+                    Ex: <code>rename 's/.png/.jpg/' *.png</code><br>
+                    Obs: Pode ser necessário instalar com <code>sudo apt install rename</code>
+                </li>
+            </ol>
+        </section>
+
+        <section id="q6">
+            <h2>Sistema (APT)</h2>
+            <ol>
+                <li><strong>sudo apt</strong> — Gerenciador de pacotes para distribuições baseadas em Debian.<br>
+                    Ex: Linux Mint, Zorin OS, Ubuntu
+                </li>
+                <li><strong>sudo apt update</strong> — Atualiza a lista de pacotes disponíveis.</li>
+                <li><strong>sudo apt upgrade</strong> — Atualiza os programas instalados.</li>
+                <li><strong>sudo apt install</strong> — Instala programas.<br>
+                    Ex: <code>sudo apt install nome-do-programa</code>
+                </li>
+            </ol>
+        </section>
+
+        <section id="q7">
+            <h2>Execução de arquivos</h2>
+            <ul>
+                <li><code>python3 arquivo.py</code> — Executa arquivo Python</li>
+                <li><code>chmod +x script.sh</code> — Dá permissão de execução ao script</li>
+                <li><code>./script.sh</code> — Executa script</li>
+                <li><code>xdg-open arquivo.html</code> — Abre HTML no navegador</li>
+            </ul>
+        </section>
+
+        <section id="q8">
+            <h2>Comandos estéticos</h2>
+            <ol>
+                <li><strong>lolcat</strong> — Colore textos no terminal.<br>
+                    Instalar: <code>sudo apt install lolcat</code><br>
+                    Ex: <code>echo "Olá, mundo" | lolcat</code>
+                </li>
+                <li><strong>figlet</strong> — Cria textos grandes em ASCII.<br>
+                    Instalar: <code>sudo apt install figlet</code><br>
+                    Ex: <code>figlet Linux</code>
+                </li>
+                <li><strong>tree</strong> — Mostra arquivos em forma de árvore.<br>
+                    Instalar: <code>sudo apt install tree</code>
+                </li>
+                <li><strong>htop</strong> — Mostra uso de CPU, RAM e processos.<br>
+                    Instalar: <code>sudo apt install htop</code>
+                </li>
+                <li><strong>neofetch</strong> — Mostra informações do sistema.<br>
+                    Instalar: <code>sudo apt install neofetch</code>
+                </li>
+            </ol>
+        </section>
+
+        <section id="q9">
+            <h2>Comandos engraçados</h2>
+            <ol>
+                <li><strong>cmatrix</strong> — Efeito estilo Matrix.<br>
+                    Instalar: <code>sudo apt install cmatrix</code>
+                </li>
+                <li><strong>oneko</strong> — Gatinho que segue o mouse.<br>
+                    Instalar: <code>sudo apt install oneko</code>
+                </li>
+                <li><strong>cowsay</strong> — Vaca que "fala" um texto.<br>
+                    Instalar: <code>sudo apt install cowsay</code>
+                </li>
+                <li><strong>fortune</strong> — Frases aleatórias.<br>
+                    Instalar: <code>sudo apt install fortune</code>
+                </li>
+                <li><strong>sl</strong> — Exibe um trem no terminal.<br>
+                    Instalar: <code>sudo apt install sl</code>
+                </li>
+            </ol>
+        </section>
+
+        <section id="dicas">
+            <h2>Dicas</h2>
+            <ul>
+                <li>Use <strong>sudo</strong> apenas quando necessário.</li>
+                <li>Tenha muito cuidado com <code>rm -rf</code> — ele apaga tudo sem confirmação.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
